@@ -8,6 +8,11 @@ dl {
     margin-top: 25px;
     font-size: 1.2em;
   }
+  dd {
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: justify;
+  }
 * {
   margin: 0;
   padding: 0;
