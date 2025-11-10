@@ -1,7 +1,18 @@
 dl {
     width: 100%;
     margin: auto;
-    padding: 10px;}
+    padding: 10px;;
+  }
+  dt {
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 1.2em;
+  }
+  dd {
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: justify;
+  }
 * {
   margin: 0;
   padding: 0;
@@ -96,3 +107,17 @@ footer {
   text-align: center;
   font-size: 0.95rem;
   color: #2e3b32;}
+
+  .recovery {
+    max-width: 850px;
+  line-height: 1.75;
+  color: #2b3b32;
+  font-family: 'Poppins', sans-serif;}
+
+  iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 30px auto;
+  }
