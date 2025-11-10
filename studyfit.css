@@ -1,5 +1,98 @@
 dl {
     width: 100%;
     margin: auto;
-    padding: 10px;
-}
+    padding: 10px;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;}
+body {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #cce3d6, #7fad94, #4f7a63);
+  min-height: 100vh;
+  color: #213026;}
+.page-frame {
+  background: #ffffff;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);}
+.site-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+.header-collage {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 180px;
+  overflow: hidden;}
+.header-collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: 0.3s;}
+.header-collage img:hover {
+  filter: brightness(1.07);
+  transform: scale(1.03);}
+.title-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+  gap: 0.75rem;}
+.title-banner h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #2e4a3a;}
+.logo {
+  width: 55px;
+  height: auto;}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.3rem 0 2rem;}
+nav a {
+  text-decoration: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  background: #d7e8df;
+  color: #294235;
+  font-weight: 600;
+  transition: 0.25s;}
+nav a:hover,
+nav a.active {
+  background: #7fad94;
+  color: #ffffff;}
+main {
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;}
+.summary {
+  max-width: 850px;
+  text-align: center;
+  line-height: 1.75;
+  color: #2b3b32;
+  font-family: 'Poppins', sans-serif;}
+.summary h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4f7a63;}
+footer {
+  background: #ffffff;
+  border-top: 1px solid #d3ded8;
+  padding: 1.4rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #2e3b32;}
