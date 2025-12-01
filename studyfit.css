@@ -125,6 +125,13 @@ footer {
   font-size: 0.95rem;
   color: #2e3b32;
 }
+
+table a {
+  color: #4f7a63;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 table.workout-table {
   width: 100%;
   border-collapse: collapse;
@@ -179,6 +186,8 @@ table.workout-table th {
   height: 150px;
   object-fit: cover;
 }
+
+
 
 @media (max-width: 800px) {
   .workout-section {
