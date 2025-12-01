@@ -7,135 +7,153 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="fonts">
   <link type="image/x-icon" href="assets/logo.png" rel="icon">
   <link href="studyfit.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .workout-images img { width: 30%; margin-right: 1%; }
+    .workout-images img:last-child { margin-right: 0; }
+    .workout-table td, .workout-table th { padding: 8px; text-align: center; }
+  </style>
 </head>
 <body>
 
-  <div class="page-frame">
+<div class="page-frame">
 
-    <header class="site-header">
+  <header class="site-header">
+    <div class="header-collage">
+      <img src="assets/murn.jpg" alt="i1">
+      <img src="assets/murn.jpg" alt="i2">
+      <img src="assets/murn.jpg" alt="i3">
+      <img src="assets/murn.jpg" alt="i4">
+      <img src="assets/murn.jpg" alt="i5">
+    </div>
 
-      <div class="header-collage">
-        <img src="assets/murn.jpg" alt="i1">
-        <img src="assets/murn.jpg" alt="i2">
-        <img src="assets/murn.jpg" alt="i3">
-        <img src="assets/murn.jpg" alt="i4">
-        <img src="assets/murn.jpg" alt="i5">
-      </div>
+    <div class="title-banner">
+      <img src="assets/logo.png" alt="StudyFit Logo" class="logo">
+      <h1>StudyFit</h1>
+    </div>
 
-      <div class="title-banner">
-        <img src="assets/logo.png" alt="StudyFit Logo" class="logo">
-        <h1>StudyFit</h1>
-      </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="meals.html">Meals</a></li>
+        <li><a href="workouts.html" class="active">Workouts</a></li>
+        <li><a href="recovery.html">Recovery</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="meals.html">Meals</a></li>
-          <li><a href="workouts.html" class="active">Workouts</a></li>
-          <li><a href="recovery.html">Recovery</a></li>
-        </ul>
-      </nav>
+  <main>
+    <section class="summary">
 
-    </header>
+      <h2>Workouts</h2>
+      <table class="workout-table">
+        <tr>
+          <th>Muscle Group</th>
+          <th>Exercise 1</th>
+          <th>Exercise 2</th>
+          <th>Exercise 3</th>
+          <th>Exercise 4</th>
+          <th>Exercise 5</th>
+        </tr>
 
-    <main>
-      <section class="summary">
+        <tr>
+          <td>Chest</td>
+          <td><a href="#workout1">Item 1</a></td>
+          <td><a href="#workout2">Item 2</a></td>
+          <td><a href="#workout3">Item 3</a></td>
+          <td><a href="#workout4">Item 4</a></td>
+          <td><a href="#workout5">Item 5</a></td>
+        </tr>
 
-        <h2>Workouts</h2>
-        <table class="workout-table">
-          <tr>
-            <th>Muscle Group</th>
-            <th>Specific Exercise</th>
-          </tr>
+        <tr>
+          <td>Back</td>
+          <td><a href="#workout6">Item 6</a></td>
+          <td><a href="#workout7">Item 7</a></td>
+          <td><a href="#workout8">Item 8</a></td>
+          <td><a href="#workout9">Item 9</a></td>
+          <td><a href="#workout10">Item 10</a></td>
+        </tr>
 
-          <tr>
-            <td>Item 1</td>
-            <td>
-              <div class="right-group">
-                <span>Item 1</span>
-                <span>Item 2</span>
-                <span>Item 3</span>
-              </div>
-            </td>
-          </tr>
+        <tr>
+          <td>Arms</td>
+          <td><a href="#workout11">Item 11</a></td>
+          <td><a href="#workout12">Item 12</a></td>
+          <td><a href="#workout13">Item 13</a></td>
+          <td><a href="#workout14">Item 14</a></td>
+          <td><a href="#workout15">Item 15</a></td>
+        </tr>
 
-          <tr>
-            <td>Item 2</td>
-            <td>
-              <div class="right-group">
-                <span>Item 4</span>
-                <span>Item 5</span>
-                <span>Item 6</span>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td>Item 3</td>
-            <td>
-              <div class="right-group">
-                <span>Item 7</span>
-                <span>Item 8</span>
-                <span>Item 9</span>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td>Item 4</td>
-            <td>
-              <div class="right-group">
-                <span>Item 10</span>
-                <span>Item 11</span>
-                <span>Item 12</span>
-              </div>
-            </td>
-          </tr>
+        <tr>
+          <td>Shoulders</td>
+          <td><a href="#workout16">Item 16</a></td>
+          <td><a href="#workout17">Item 17</a></td>
+          <td><a href="#workout18">Item 18</a></td>
+          <td><a href="#workout19">Item 19</a></td>
+          <td><a href="#workout20">Item 20</a></td>
+        </tr>
 
           <tr>
-            <td>Item 5</td>
-            <td>
-              <div class="right-group">
-                <span>Item 13</span>
-                <span>Item 14</span>
-                <span>Item 15</span>
-              </div>
-            </td>
-          </tr>
+          <td>Legs</td>
+          <td><a href="#workout16">Item 16</a></td>
+          <td><a href="#workout17">Item 17</a></td>
+          <td><a href="#workout18">Item 18</a></td>
+          <td><a href="#workout19">Item 19</a></td>
+          <td><a href="#workout20">Item 20</a></td>
+        </tr>
+      </table>
 
-          <tr>
-            <td>Item 6</td>
-            <td>
-              <div class="right-group">
-                <span>Item 16</span>
-                <span>Item 17</span>
-                <span>Item 18</span>
-              </div>
-            </td>
-          </tr>
-        </table>
 
-        <!-- Copy and paste this segment for each new workout we add -->
-        <div class="workout-section">
-          <div class="workout-text">
-            <h3>Workout 1</h3>
-            <p>Description for workout 1 goes here. Explain what muscles it targets and how it benefits the athlete.</p>
-          </div>
-          <div class="workout-images">
-            <img src="assets/murn.jpg" alt="img1">
-            <img src="assets/murn.jpg" alt="img2">
-            <img src="assets/murn.jpg" alt="img3">
-          </div>
+      <h2>Chest</h2>
+
+      <div class="workout-section" id="workout1">
+        <div class="workout-text">
+          <h3>Exercise 1</h3>
+          <p>Description for workout 1 goes here. Explain what muscles it targets and how it benefits the athlete.</p>
         </div>
+        <div class="workout-images">
+          <img src="assets/murn.jpg" alt="Workout 1 Image 1">
+          <img src="assets/murn.jpg" alt="Workout 1 Image 2">
+          <img src="assets/murn.jpg" alt="Workout 1 Image 3">
+        </div>
+      </div>
 
-      </section>
-    </main>
+      <div class="workout-section" id="workout2">
+        <div class="workout-text">
+          <h3>Exercise 2</h3>
+          <p>Description for workout 2 goes here.</p>
+        </div>
+        <div class="workout-images">
+          <img src="assets/murn.jpg" alt="Workout 2 Image 1">
+          <img src="assets/murn.jpg" alt="Workout 2 Image 2">
+          <img src="assets/murn.jpg" alt="Workout 2 Image 3">
+        </div>
+      </div>
 
-    <footer>
-      <p>About Us: We are 3 college students looking to help out other college age athletes meet their physical and mental goals.</p>
-    </footer>
+      <div class="workout-section" id="workout3">
+        <div class="workout-text">
+          <h3>Exercise 3</h3>
+          <p>Description for workout 3 goes here.</p>
+        </div>
+        <div class="workout-images">
+          <img src="assets/murn.jpg" alt="Workout 3 Image 1">
+          <img src="assets/murn.jpg" alt="Workout 3 Image 2">
+          <img src="assets/murn.jpg" alt="Workout 3 Image 3">
+        </div>
+      </div>
 
-  </div>
+         <h2>Back</h2>
+         <h2>Arms</h2>
+         <h2>Shoulders</h2>
+         <h2>Legs</h2>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>About Us: We are 3 college students looking to help out other college age athletes meet their physical and mental goals.</p>
+  </footer>
+
+</div>
 
 </body>
 </html>
