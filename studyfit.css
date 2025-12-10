@@ -191,6 +191,10 @@ table.workout-table th {
   margin-bottom: 2rem;
 }
 
+.exercise h3 {
+  color: #4f7a63
+}
+
 .exercise-text {
   flex: 1;
   text-align: left;
