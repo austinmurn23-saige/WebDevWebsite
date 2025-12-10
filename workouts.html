@@ -7,81 +7,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="fonts">
   <link type="image/x-icon" href="assets/logo.png" rel="icon">
   <link href="studyfit.css" rel="stylesheet">
-  <style>
-    html { scroll-behavior: smooth; }
-    .workout-images img { width: 30%; margin-right: 1%; }
-    .workout-images img:last-child { margin-right: 0; }
-    .workout-table td, .workout-table th { padding: 8px; text-align: center; }
-    section img, video {
-      max-width: 20%;
-      height: auto;
 
-    }
-  
-.exercise-row {
-  display: flex;
-  gap: 10px;
-  align-items: stretch; /* makes all items the same height */
-}
-
-.exercise-row > img,
-.exercise-row > .hover-wrap {
-  flex: 1 1 30%;
-  height: auto;
-  object-fit: cover; /* makes image/video fill the container nicely */
-}
-
-.hover-wrap {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.hover-wrap img,
-.hover-wrap video {
-  width: 100%;
-  height: 100%; /* fill the entire container */
-  object-fit: cover; /* crop/fit nicely */
-  display: block;
-}
-
-.hover-wrap video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.hover-wrap:hover video {
-  opacity: 1;
-}
-
-.hover-wrap:hover img {
-  opacity: 0;
-}
-
-
-
-
-
-  </style>
 </head>
 <body>
-
 <div class="page-frame">
 
   <header class="site-header">
     <div class="header-collage">
-      <img src="images/landminerow2.jpeg" alt="i1">
-      <img src="images/kevin.jpeg" alt="i2">
-      <img src="images/vup1.jpeg" alt="i3">
-      <img src="images/chestfly2.jpeg" alt="i4">
-      <img src="images/dumbellcurl1.jpeg" alt="i5">
+      <img src="images/landminerow2.jpeg" alt="">
+      <img src="images/kevin.jpeg" alt="">
+      <img src="images/vup1.jpeg" alt="">
+      <img src="images/chestfly2.jpeg" alt="">
+      <img src="images/dumbellcurl1.jpeg" alt="">
     </div>
 
     <div class="title-banner">
-      <img src="assets/logo.png" alt="StudyFit Logo" class="logo">
+      <img src="assets/logo.png" class="logo" alt="StudyFit Logo">
       <h1>StudyFit</h1>
     </div>
 
@@ -98,7 +39,8 @@
   <main>
     <section class="summary">
 
-      <h2>Workouts</h2>
+      <h2 id="top">Workouts</h2>
+
       <table class="workout-table">
         <tr>
           <th>Muscle Group</th>
@@ -114,45 +56,42 @@
           <td>Chest</td>
           <td><a href="#BenchPress">Bench Press</a></td>
           <td><a href="#InclineBenchPress">Incline Bench Press</a></td>
-          <td><a href="#DumbbellBench">Dumbell Bench</a></td>
+          <td><a href="#DumbbellBench">Dumbbell Bench</a></td>
           <td><a href="#CableFly">Cable Fly</a></td>
-          <td>-</td>
-          <td>-</td>
+          <td>-</td><td>-</td>
         </tr>
 
         <tr>
           <td>Back</td>
-          <td><a href="#BentOverRow">Bent over Row</a></td>
+          <td><a href="#BentOverRow">Bent-Over Row</a></td>
           <td><a href="#PullUps">Pull Ups</a></td>
-          <td><a href="#IsoLateral">Iso Lateral</a></td>
+          <td><a href="#IsoLateral">Iso Lateral Row</a></td>
           <td><a href="#LatPulldown">Lat Pulldown</a></td>
           <td><a href="#SeatedRow">Seated Row</a></td>
           <td>-</td>
         </tr>
 
         <tr>
-          <td>Bicep</td>
+          <td>Biceps</td>
           <td><a href="#BicepCurl">Bicep Curl</a></td>
           <td><a href="#HammerCurl">Hammer Curl</a></td>
           <td><a href="#PreacherCurl">Preacher Curl</a></td>
           <td><a href="#BarbellCurl">Barbell Curl</a></td>
-          <td>-</td>
-          <td>-</td>
+          <td>-</td><td>-</td>
         </tr>
 
         <tr>
-          <td>Tricep</td>
+          <td>Triceps</td>
           <td><a href="#SkullCrusher">Skull Crusher</a></td>
           <td><a href="#CableOverheadExtension">Cable Overhead Extension</a></td>
           <td><a href="#CablePushDown">Cable Push Down</a></td>
           <td><a href="#PushDownMachine">Push Down Machine</a></td>
-          <td>-</td>
-          <td>-</td>
+          <td>-</td><td>-</td>
         </tr>
 
         <tr>
           <td>Shoulders</td>
-          <td><a href="#EgyptianRaise">Egyption Raise</a></td>
+          <td><a href="#EgyptianRaise">Egyptian Raise</a></td>
           <td><a href="#RearDeltFly">Rear Delt Fly</a></td>
           <td><a href="#ArnoldPress">Arnold Press</a></td>
           <td><a href="#StrictPress">Strict Press</a></td>
@@ -160,7 +99,7 @@
           <td>-</td>
         </tr>
 
-          <tr>
+        <tr>
           <td>Legs</td>
           <td><a href="#Squat">Squat</a></td>
           <td><a href="#SplitSquat">Split Squat</a></td>
@@ -173,440 +112,914 @@
         <tr>
           <td>Core</td>
           <td><a href="#VUps">V-Ups</a></td>
-          <td><a href="ObliqueVUps">Oblique V-Ups</a></td>
+          <td><a href="#ObliqueVUps">Oblique V-Ups</a></td>
           <td><a href="#SitUps">Sit-Ups</a></td>
           <td><a href="#LegRaises">Leg Raises</a></td>
-          <td>-</td>
-          <td>-</td>
+          <td>-</td><td>-</td>
         </tr>
       </table>
 
+      <section id="Chest">
+        <h2>Chest</h2>
 
-      <!-- CHEST -->
-<section id="Chest">
-  <h2>Chest</h2>
+        <!-- Bench Press -->
+        <div class="exercise" id="BenchPress">
+          <h3>Bench Press</h3>
+          <div class="exercise-row">
 
-  <div class="exercise" id="BenchPress">
-  <h3>Bench Press</h3>
-  <div class="exercise-row">
-    <img src="images/bench2.jpeg" alt="Bench Press 1">
-    <img src="images/bench1.jpeg" alt="Bench Press 2">
-    <div class="hover-wrap">
-      <img src="images/bench2.jpeg" alt="Incline Bench Press Video Cover">
-      <video src="images/Bench.mp4" muted loop autoplay playsinline></video>
-    </div>
-  </div>
-</div>
+            <div class="exercise-text">
+              <p>
+                The bench press is one of the best compound lifts for building chest, triceps, and shoulder strength.
+                Keep your feet planted, your shoulder blades pinned, and lower the bar under control.
+                Drive the weight up with power while keeping your elbows tucked slightly toward your sides.
+                Focus on pushing through your chest rather than just your arms for maximum strength.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
 
-  <div class="exercise" id="InclineBenchPress">
-    <h3>Incline Bench Press</h3>
-     <div class="exercise-row">
-    <img src="images/inclinebench2.jpeg" alt="Incline Bench Press 1">
-    <img src="images/inclinebench1.jpeg" alt="Incline Bench Press 2">
-    <div class="hover-wrap">
-      <img src="images/inclinebench2.jpeg" alt="Incline Bench Press Video Cover">
-      <video src="images/inclinebench.Mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-    </div>
+            <div class="exercise-media">
+              <img src="images/bench2.jpeg">
+              <img src="images/bench1.jpeg">
+              <div class="hover-wrap">
+                <img src="images/bench2.jpeg">
+                <video src="images/Bench.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
 
-  <div class="exercise" id="DumbellBench">
-    <h3>Dumbell Bench</h3>
-     <div class="exercise-row">
-    <img src="images/DumbellBench2.jpeg" alt="Dumbell Bench 1">
-    <img src="images/DumbellBench1.jpeg" alt="Dumbell Bench 2">
-    <div class="hover-wrap">
-      <img src="images/DumbellBench1.jpeg" alt="Dumbell Bench Video Cover">
-      <video src="images/DumbbellBench.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+          </div>
+        </div>
 
-  <div class="exercise" id="CableFly">
-    <h3>Cable Fly</h3>
-     <div class="exercise-row">
-    <img src="images/cablechestfly1.jpeg" alt="Cable Fly 1">
-    <img src="images/cablechestlfy2.jpeg" alt="Cable Fly 2">
-    <div class="hover-wrap">
-      <img src="images/CablechestFly1.jpeg" alt="Cable Fly Video Cover">
-      <video src="images/CableFly.mp4" muted loop autoplay playsinline></video>
-    </div>
-    </div>
-  </div>
-</section>
+        <!-- Incline Bench Press -->
+        <div class="exercise" id="InclineBenchPress">
+          <h3>Incline Bench Press</h3>
+          <div class="exercise-row">
 
-<!-- BACK -->
-<section id="Back">
-  <h2>Back</h2>
+            <div class="exercise-text">
+              <p>
+                The incline bench press targets the upper chest and shoulders, helping build a balanced chest.
+                Set your bench to a moderate incline and lower the bar toward the upper chest.
+                Press upward smoothly, keeping your elbows slightly tucked.
+                Avoid arching excessively and keep your core tight throughout the lift.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
 
-  <div class="exercise" id="BentOverRow">
-    <h3>Bent over Row</h3>
-     <div class="exercise-row">
-    <img src="images/BentOver1.jpeg" alt="Bent over Row 1">
-    <img src="images/BentOverRow2.jpeg" alt="Bent over Row 2">
-    <div class="hover-wrap">
-      <img src="images/BentOverRow3.jpeg" alt="Bent over Row Video Cover">
-      <video src="images/BentOver.mp4" muted loop autoplay playsinline></video>
-    </div>
-  </div>
-  </div>
+            <div class="exercise-media">
+              <img src="images/inclinebench2.jpeg">
+              <img src="images/inclinebench1.jpeg">
+              <div class="hover-wrap">
+                <img src="images/inclinebench2.jpeg">
+                <video src="images/inclinebench.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
 
-  <div class="exercise" id="PullUps">
-    <h3>Pull Ups</h3>
-     <div class="exercise-row">
-    <img src="images/PullUp1.jpeg" alt="Pull Ups 1">
-    <img src="images/PullUp2.jpeg" alt="Pull Ups 2">
-    <div class="hover-wrap">
-      <img src="images/PullUp1.jpeg" alt="Pull Ups Video Cover">
-      <video src="images/PullUp.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+          </div>
+        </div>
 
-  <div class="exercise" id="IsoLateral">
-    <h3>Iso Lateral</h3>
-     <div class="exercise-row">
-    <img src="images/Isolateralrow1.jpeg" alt="Iso Lateral 1">
-    <img src="images/IsoLateral2.jpeg" alt="Iso Lateral 2">
-    <div class="hover-wrap">
-      <img src="images/IsoLateral3.jpeg" alt="Iso Lateral Video Cover">
-      <video src="images/IsoLateral.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+        <!-- Dumbbell Bench -->
+        <div class="exercise" id="DumbbellBench">
+          <h3>Dumbbell Bench Press</h3>
+          <div class="exercise-row">
 
-  <div class="exercise" id="LatPulldown">
-    <h3>Lat Pulldown</h3>
-     <div class="exercise-row">
-    <img src="images/Lateralpull1.jpeg" alt="Lat Pulldown 1">
-    <img src="images/Lateralpull2.jpeg" alt="Lat Pulldown 2">
-    <div class="hover-wrap">
-      <img src="images/Lateralpull1.jpeg" alt="Lat Pulldown Video Cover">
-      <video src="images/Latpulldown.mp4" muted loop autoplay playsinline></video>
-    </div>
-  </div>
-  </div>
+            <div class="exercise-text">
+              <p>
+                The dumbbell bench press helps build stability and allows for a deeper stretch in the chest.
+                Lower the dumbbells slowly and press upward evenly with both arms.
+                Keep your elbows from flaring too wide to protect your shoulders.
+                Squeeze your chest at the top of each rep for maximum activation.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
 
-  <div class="exercise" id="SeatedRow">
-    <h3>Seated Row</h3>
-     <div class="exercise-row">
-    <img src="images/SeatedRow1.jpeg" alt="Seated Row 1">
-    <img src="images/SeatedRow2.jpeg" alt="Seated Row 2">
-    <div class="hover-wrap">
-      <img src="images/SeatedRow1.jpeg" alt="Seated Row Video Cover">
-      <video src="images/SeatedRow.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
-</section>
+            <div class="exercise-media">
+              <img src="images/DumbellBench2.jpeg">
+              <img src="images/DumbellBench1.jpeg">
+              <div class="hover-wrap">
+                <img src="images/DumbellBench1.jpeg">
+                <video src="images/DumbbellBench.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
 
-<!-- BICEP -->
-<section id="Bicep">
-  <h2>Bicep</h2>
+          </div>
+        </div>
 
-  <div class="exercise" id="BicepCurl">
-    <h3>Bicep Curl</h3>
-     <div class="exercise-row">
-    <img src="images/BicepCurl1.jpeg" alt="Bicep Curl 1">
-    <img src="images/BicepCurl2.jpeg" alt="Bicep Curl 2">
-    <div class="hover-wrap">
-      <img src="images/BicepCurl3.jpeg" alt="Bicep Curl Video Cover">
-      <video src="images/BicepCurl.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+        <!-- Cable Fly -->
+        <div class="exercise" id="CableFly">
+          <h3>Cable Fly</h3>
+          <div class="exercise-row">
 
-  <div class="exercise" id="HammerCurl">
-    <h3>Hammer Curl</h3>
-     <div class="exercise-row">
-    <img src="images/HammerCurl1.jpeg" alt="Hammer Curl 1">
-    <img src="images/HammerCurl2.jpeg" alt="Hammer Curl 2">
-    <div class="hover-wrap">
-      <img src="images/HammerCurl3.jpeg" alt="Hammer Curl Video Cover">
-      <video src="images/HammerCurlVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+            <div class="exercise-text">
+              <p>
+                Cable flyes provide constant tension and help shape the chest muscles.
+                Keep a slight bend in your elbows and bring your hands together in a smooth arc.
+                Focus on squeezing your chest at the top instead of just touching your hands.
+                Move slowly and avoid using momentum so your chest stays under constant tension.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
 
-  <div class="exercise" id="PreacherCurl">
-    <h3>Preacher Curl</h3>
-     <div class="exercise-row">
-    <img src="images/PreacherCurl1.jpeg" alt="Preacher Curl 1">
-    <img src="images/PreacherCurl2.jpeg" alt="Preacher Curl 2">
-    <div class="hover-wrap">
-      <img src="images/PreacherCurl3.jpeg" alt="Preacher Curl Video Cover">
-      <video src="images/PreacherCurlVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+            <div class="exercise-media">
+              <img src="images/cablechestfly1.jpeg">
+              <img src="images/cablechestlfy2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/CablechestFly1.jpeg">
+                <video src="images/CableFly.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
 
-  <div class="exercise" id="BarbellCurl">
-    <h3>Barbell Curl</h3>
-     <div class="exercise-row">
-    <img src="images/BarbellCurl1.jpeg" alt="Barbell Curl 1">
-    <img src="images/BarbellCurl2.jpeg" alt="Barbell Curl 2">
-    <div class="hover-wrap">
-      <img src="images/BarbellCurl3.jpeg" alt="Barbell Curl Video Cover">
-      <video src="images/BarbellCurl.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
-</section>
+          </div>
+        </div>
 
-<!-- TRICEP -->
-<section id="Tricep">
-  <h2>Tricep</h2>
+      </section>
 
-  <div class="exercise" id="SkullCrusher">
-    <h3>Skull Crusher</h3>
-     <div class="exercise-row">
-    <img src="images/SkullCrusher1.jpeg" alt="Skull Crusher 1">
-    <img src="images/SkullCrusher2.jpeg" alt="Skull Crusher 2">
-    <div class="hover-wrap">
-      <img src="images/SkullCrusher3.jpeg" alt="Skull Crusher Video Cover">
-      <video src="images/SkullCrusherVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+      <section id="Back">
+        <h2>Back</h2>
 
-  <div class="exercise" id="CableOverheadExtension">
-    <h3>Cable Overhead Extension</h3>
-      <div class="exercise-row">
-    <img src="images/Extension1.jpeg" alt="Cable Overhead Extension 1">
-    <img src="images/CableOverheadExtension2.jpeg" alt="Cable Overhead Extension 2">
-    <div class="hover-wrap">
-      <img src="images/CableOverheadExtension3.jpeg" alt="Cable Overhead Extension Video Cover">
-      <video src="images/CableOverheadExtensionVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+        <!-- Bent Over Row -->
+        <div class="exercise" id="BentOverRow">
+          <h3>Bent-Over Row</h3>
+          <div class="exercise-row">
 
-  <div class="exercise" id="CablePushDown">
-    <h3>Cable Push Down</h3>
-      <div class="exercise-row">
-    <img src="images/CablePushDown1.jpeg" alt="Cable Push Down 1">
-    <img src="images/CablePushDown2.jpeg" alt="Cable Push Down 2">
-    <div class="hover-wrap">
-      <img src="images/CablePushDown3.jpeg" alt="Cable Push Down Video Cover">
-      <video src="images/CablePushDownVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+            <div class="exercise-text">
+              <p>
+                The bent-over row develops the upper and mid-back while improving overall pulling strength.
+                Keep your torso stable, hinge at your hips, and pull the bar toward your ribs.
+                Lead with your elbows and squeeze your shoulder blades together.
+                Maintain a flat back throughout the movement to avoid lower back strain.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
 
-  <div class="exercise" id="PushDownMachine">
-    <h3>Push Down Machine</h3>
-     <div class="exercise-row">
-    <img src="images/PushDownMachine1.jpeg" alt="Push Down Machine 1">
-    <img src="images/PushDownMachine2.jpeg" alt="Push Down Machine 2">
-    <div class="hover-wrap">
-      <img src="images/PushDownMachine3.jpeg" alt="Push Down Machine Video Cover">
-      <video src="images/PushDownMachineVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
-</section>
+            <div class="exercise-media">
+              <img src="images/BentOver1.jpeg">
+              <img src="images/BentOverRow2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/BentOverRow3.jpeg">
+                <video src="images/BentOver.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
 
-<!-- SHOULDERS -->
-<section id="Shoulders">
-  <h2>Shoulders</h2>
+          </div>
+        </div>
 
-  <div class="exercise" id="EgyptianRaise">
-    <h3>Egyptian Raise</h3>
-     <div class="exercise-row">
-    <img src="images/EgyptianRaise1.jpeg" alt="Egyptian Raise 1">
-    <img src="images/EgyptianRaise2.jpeg" alt="Egyptian Raise 2">
-    <div class="hover-wrap">
-      <img src="images/EgyptianRaise3.jpeg" alt="Egyptian Raise Video Cover">
-      <video src="images/EgyptianRaiseVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+        <!-- Pull Ups -->
+        <div class="exercise" id="PullUps">
+          <h3>Pull Ups</h3>
+          <div class="exercise-row">
 
-  <div class="exercise" id="RearDeltFly">
-    <h3>Rear Delt Fly</h3>
-      <div class="exercise-row">
-    <img src="images/RearDeltFly1.jpeg" alt="Rear Delt Fly 1">
-    <img src="images/RearDeltFly2.jpeg" alt="Rear Delt Fly 2">
-    <div class="hover-wrap">
-      <img src="images/RearDeltFly3.jpeg" alt="Rear Delt Fly Video Cover">
-      <video src="images/RearDeltFlyVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+            <div class="exercise-text">
+              <p>
+                Pull ups are a foundational bodyweight exercise that build back width and upper-body strength.
+                Keep your core engaged and avoid swinging or kipping upward.
+                Pull your chest toward the bar while keeping your elbows close to your sides.
+                Lower slowly to build strength through the entire range of motion.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
 
-  <div class="exercise" id="ArnoldPress">
-    <h3>Arnold Press</h3>
-      <div class="exercise-row">
-    <img src="images/ArnoldPress1.jpeg" alt="Arnold Press 1">
-    <img src="images/ArnoldPress2.jpeg" alt="Arnold Press 2">
-    <div class="hover-wrap">
-      <img src="images/ArnoldPress3.jpeg" alt="Arnold Press Video Cover">
-      <video src="images/ArnoldPressVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+            <div class="exercise-media">
+              <img src="images/PullUp1.jpeg">
+              <img src="images/PullUp2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/PullUp1.jpeg">
+                <video src="images/PullUp.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
 
-  <div class="exercise" id="StrictPress">
-    <h3>Strict Press</h3>
-     <div class="exercise-row">
-    <img src="images/StrictPress1.jpeg" alt="Strict Press 1">
-    <img src="images/StrictPress2.jpeg" alt="Strict Press 2">
-    <div class="hover-wrap">
-      <img src="images/StrictPress3.jpeg" alt="Strict Press Video Cover">
-      <video src="images/StrictPressVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+          </div>
+        </div>
 
-  <div class="exercise" id="PushPress">
-    <h3>Push Press</h3>
-      <div class="exercise-row">
-    <img src="images/PushPress1.jpeg" alt="Push Press 1">
-    <img src="images/PushPress2.jpeg" alt="Push Press 2">
-    <div class="hover-wrap">
-      <img src="images/PushPress3.jpeg" alt="Push Press Video Cover">
-      <video src="images/PushPressVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
-</section>
+        <!-- Iso Lateral -->
+        <div class="exercise" id="IsoLateral">
+          <h3>Iso Lateral Row</h3>
+          <div class="exercise-row">
 
-<!-- LEGS -->
-<section id="Legs">
-  <h2>Legs</h2>
+            <div class="exercise-text">
+              <p>
+                The iso lateral row trains each side independently, helping correct muscle imbalances.
+                Keep your chest against the pad and pull with your elbow rather than your hand.
+                Squeeze your back at the end of each rep to maximize contraction.
+                Control the weight on the way down for better muscle engagement.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
 
-  <div class="exercise" id="Squat">
-    <h3>Squat</h3>
-     <div class="exercise-row">
-    <img src="images/Squat1.jpeg" alt="Squat 1">
-    <img src="images/Squat2.jpeg" alt="Squat 2">
-    <div class="hover-wrap">
-      <img src="images/Squat3.jpeg" alt="Squat Video Cover">
-      <video src="images/SquatVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+            <div class="exercise-media">
+              <img src="images/Isolateralrow1.jpeg">
+              <img src="images/IsoLateral2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/IsoLateral3.jpeg">
+                <video src="images/IsoLateral.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
 
-  <div class="exercise" id="SplitSquat">
-    <h3>Split Squat</h3>
-      <div class="exercise-row">
-    <img src="images/SplitSquat1.jpeg" alt="Split Squat 1">
-    <img src="images/SplitSquat2.jpeg" alt="Split Squat 2">
-    <div class="hover-wrap">
-      <img src="images/SplitSquat3.jpeg" alt="Split Squat Video Cover">
-      <video src="images/SplitSquatVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+          </div>
+        </div>
 
-  <div class="exercise" id="GobletSquat">
-    <h3>Goblet Squat</h3>
-      <div class="exercise-row">
-    <img src="images/GobletSquat1.jpeg" alt="Goblet Squat 1">
-    <img src="images/GobletSquat2.jpeg" alt="Goblet Squat 2">
-    <div class="hover-wrap">
-      <img src="images/GobletSquat3.jpeg" alt="Goblet Squat Video Cover">
-      <video src="images/GobletSquatVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+        <!-- Lat Pulldown -->
+        <div class="exercise" id="LatPulldown">
+          <h3>Lat Pulldown</h3>
+          <div class="exercise-row">
 
-  <div class="exercise" id="LegExtension">
-    <h3>Leg Extension</h3>
-     <div class="exercise-row">
-    <img src="images/LegExtension1.jpeg" alt="Leg Extension 1">
-    <img src="images/LegExtension2.jpeg" alt="Leg Extension 2">
-    <div class="hover-wrap">
-      <img src="images/LegExtension1.jpeg" alt="Leg Extension Video Cover">
-      <video src="images/LegExtension.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+            <div class="exercise-text">
+              <p>
+                The lat pulldown targets the lat muscles and helps improve vertical pulling strength.
+                Sit tall and pull the bar toward your upper chest, keeping your elbows pointed down.
+                Avoid pulling behind your neck to protect your shoulders.
+                Control the bar on the way up to maintain tension throughout the movement.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
 
-  <div class="exercise" id="LegCurl">
-    <h3>Leg Curl</h3>
-      <div class="exercise-row">
-    <img src="images/LegCurl1.jpeg" alt="Leg Curl 1">
-    <img src="images/LegCurl2.jpeg" alt="Leg Curl 2">
-    <div class="hover-wrap">
-      <img src="images/LegCurl3.jpeg" alt="Leg Curl Video Cover">
-      <video src="images/LegCurlVideo.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+            <div class="exercise-media">
+              <img src="images/Lateralpull1.jpeg">
+              <img src="images/Lateralpull2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/Lateralpull1.jpeg">
+                <video src="images/Latpulldown.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
 
-  <div class="exercise" id="LegPress">
-    <h3>Leg Press</h3>
-      <div class="exercise-row">
-    <img src="images/LegPress1.jpeg" alt="Leg Press 1">
-    <img src="images/LegPress2.jpeg" alt="Leg Press 2">
-    <div class="hover-wrap">
-      <img src="images/LegPress1.jpeg" alt="Leg Press Video Cover">
-      <video src="images/LegPress.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
-</section>
+          </div>
+        </div>
 
-<!-- CORE -->
-<section id="Core">
-  <h2>Core</h2>
+        <!-- Seated Row -->
+        <div class="exercise" id="SeatedRow">
+          <h3>Seated Row</h3>
+          <div class="exercise-row">
 
-  <div class="exercise" id="VUps">
-    <h3>V-Ups</h3>
-      <div class="exercise-row">
-    <img src="images/VUp1.jpeg" alt="V-Ups 1">
-    <img src="images/VUp2.jpeg" alt="V-Ups 2">
-    <div class="hover-wrap">
-      <img src="images/VUp1.jpeg" alt="V-Ups Video Cover">
-      <video src="images/VUp.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+            <div class="exercise-text">
+              <p>
+                The seated row strengthens the entire back and reinforces good posture.
+                Keep your chest lifted as you pull the handle toward your torso.
+                Let your back muscles—not your arms—do most of the work.
+                Squeeze at the top, then return slowly for maximum control.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
 
-  <div class="exercise" id="ObliqueVUps">
-    <h3>Oblique V-Ups</h3>
-      <div class="exercise-row">
-    <img src="images/ObliqueVUp1.jpeg" alt="Oblique V-Ups 1">
-    <img src="images/ObliqueVUp2.jpeg" alt="Oblique V-Ups 2">
-    <div class="hover-wrap">
-      <img src="images/ObliqueVUp1.jpeg" alt="Oblique V-Ups Video Cover">
-      <video src="images/ObliqueVUp.mp4" muted loop autoplay playsinline></video>
-    </div>
-      </div>
-  </div>
+            <div class="exercise-media">
+              <img src="images/SeatedRow1.jpeg">
+              <img src="images/SeatedRow2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/SeatedRow1.jpeg">
+                <video src="images/SeatedRow.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
 
-  <div class="exercise" id="SitUps">
-    <h3>Sit-Ups</h3>
-     <div class="exercise-row"> 
-    <img src="images/SitUp1.jpeg" alt="Sit-Ups 1">
-    <img src="images/SitUp2.jpeg" alt="Sit-Ups 2">
-    <div class="hover-wrap">
-      <img src="images/SitUps1.jpeg" alt="Sit-Ups Video Cover">
-      <video src="images/SitUp.mp4" muted loop autoplay playsinline></video>
-    </div>
-     </div>
-  </div>
+          </div>
+        </div>
 
-  <div class="exercise" id="LegRaises">
-    <h3>Leg Raises</h3>
-     <div class="exercise-row">
-    <img src="images/Leglift1.jpeg" alt="Leg Raises 1">
-    <img src="images/Leglift2.jpeg" alt="Leg Raises 2">
-    <div class="hover-wrap">
-      <img src="images/leglift1.jpeg" alt="Leg Raises Video Cover
-      <video src="images/"Leglift.mp4" muted loop autoplay playsinline></video>
-    </div>
-  </div>
-  </div>
+      </section>
+
+      <section id="Bicep">
+        <h2>Biceps</h2>
+
+        <!-- Bicep Curl -->
+        <div class="exercise" id="BicepCurl">
+          <h3>Bicep Curl</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The bicep curl isolates the biceps and helps build arm size and pulling strength.
+                Keep your elbows tight to your sides and curl the weight without swinging.
+                Squeeze the biceps at the top, then lower slowly for maximum muscle activation.
+                Use strict form to keep tension on the arms instead of relying on momentum.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/BicepCurl1.jpeg">
+              <img src="images/BicepCurl2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/BicepCurl3.jpeg">
+                <video src="images/BicepCurl.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Hammer Curl -->
+        <div class="exercise" id="HammerCurl">
+          <h3>Hammer Curl</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The hammer curl targets the brachialis and forearms, helping increase arm thickness.
+                Keep your palms facing inward and lift the weight in a controlled motion.
+                Avoid leaning back or using your shoulders to lift the weight.
+                Lower the dumbbells slowly to challenge your grip and stabilizer muscles.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/HammerCurl1.jpeg">
+              <img src="images/HammerCurl2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/HammerCurl3.jpeg">
+                <video src="images/HammerCurlVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Preacher Curl -->
+        <div class="exercise" id="PreacherCurl">
+          <h3>Preacher Curl</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                Preacher curls lock your arms in position, forcing strict bicep activation.
+                Keep your chest pressed against the pad and curl the weight smoothly.
+                Lower fully for a strong stretch before curling up again.
+                Use lighter weight and perfect form to get the best results from the movement.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/PreacherCurl1.jpeg">
+              <img src="images/PreacherCurl2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/PreacherCurl3.jpeg">
+                <video src="images/PreacherCurlVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Barbell Curl -->
+        <div class="exercise" id="BarbellCurl">
+          <h3>Barbell Curl</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The barbell curl allows you to load the biceps with more weight than dumbbells.
+                Keep your elbows fixed and avoid swinging your torso backward.
+                Curl the bar upward in a smooth arc and control it on the way down.
+                Focus on slow, strict reps to maximize muscle tension and growth.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/BarbellCurl1.jpeg">
+              <img src="images/BarbellCurl2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/BarbellCurl3.jpeg">
+                <video src="images/BarbellCurl.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section id="Tricep">
+        <h2>Triceps</h2>
+
+        <!-- Skull Crusher -->
+        <div class="exercise" id="SkullCrusher">
+          <h3>Skull Crusher</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                Skull crushers isolate the triceps and help add size to the back of the arms.
+                Lower the weight toward your forehead while keeping your upper arms still.
+                Press the weight back up using only your elbows, not your shoulders.
+                Keep your elbows slightly tucked to reduce joint stress.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/SkullCrusher1.jpeg">
+              <img src="images/SkullCrusher2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/SkullCrusher3.jpeg">
+                <video src="images/SkullCrusherVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Cable Overhead Extension -->
+        <div class="exercise" id="CableOverheadExtension">
+          <h3>Cable Overhead Extension</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                Cable overhead extensions stretch the triceps through a long range of motion.
+                Lean forward slightly and keep your elbows pointed forward as you extend.
+                Move the handle slowly and avoid arching your lower back.
+                Squeeze at the top for a full contraction before lowering under control.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/Extension1.jpeg">
+              <img src="images/CableOverheadExtension2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/CableOverheadExtension3.jpeg">
+                <video src="images/CableOverheadExtensionVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Cable Push Down -->
+        <div class="exercise" id="CablePushDown">
+          <h3>Cable Push Down</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The cable pushdown builds all three heads of the triceps while allowing strict, controlled reps.
+                Keep your elbows locked at your sides and push the handle straight down.
+                Squeeze hard at the bottom to maximize triceps activation.
+                Lower slowly and keep constant tension throughout the movement.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/CablePushDown1.jpeg">
+              <img src="images/CablePushDown2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/CablePushDown3.jpeg">
+                <video src="images/CablePushDownVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Push Down Machine -->
+        <div class="exercise" id="PushDownMachine">
+          <h3>Push Down Machine</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The tricep pushdown machine provides a stable path, letting you focus solely on pushing power.
+                Keep your body upright and avoid leaning over the handle.
+                Press down using only your triceps and pause briefly at the bottom.
+                Control the handle on the way up to maintain constant tension.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/PushDownMachine1.jpeg">
+              <img src="images/PushDownMachine2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/PushDownMachine3.jpeg">
+                <video src="images/PushDownMachineVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="Shoulders">
+        <h2>Shoulders</h2>
+
+        <!-- Egyptian Raise -->
+        <div class="exercise" id="EgyptianRaise">
+          <h3>Egyptian Raise</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The Egyptian raise targets the side delts using a long range of motion with constant tension.
+                Lean slightly away from the dumbbell to increase the stretch at the bottom.
+                Raise the weight slowly without shrugging your shoulder.
+                Keep your arm slightly bent and lift with the side delt, not your traps.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/EgyptianRaise1.jpeg">
+              <img src="images/EgyptianRaise2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/EgyptianRaise3.jpeg">
+                <video src="images/EgyptianRaiseVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Rear Delt Fly -->
+        <div class="exercise" id="RearDeltFly">
+          <h3>Rear Delt Fly</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The rear delt fly strengthens the back of the shoulders and helps support good posture.
+                Bend slightly forward and lift the dumbbells outward in a wide arc.
+                Focus on squeezing the rear delts rather than pulling with your traps.
+                Use slow, controlled reps to keep the movement strict and effective.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/RearDeltFly1.jpeg">
+              <img src="images/RearDeltFly2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/RearDeltFly3.jpeg">
+                <video src="images/RearDeltFlyVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Arnold Press -->
+        <div class="exercise" id="ArnoldPress">
+          <h3>Arnold Press</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The Arnold press is a shoulder-building variation that trains all three deltoid heads.
+                Start with your palms facing you and rotate them outward as you press overhead.
+                Keep your core tight to avoid excessive back arching.
+                Move the dumbbells in a smooth, controlled motion for optimal shoulder engagement.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/ArnoldPress1.jpeg">
+              <img src="images/ArnoldPress2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/ArnoldPress3.jpeg">
+                <video src="images/ArnoldPressVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Strict Press -->
+        <div class="exercise" id="StrictPress">
+          <h3>Strict Press</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The strict press builds powerful shoulders by eliminating leg drive.
+                Stand tall, brace your core, and press the bar straight overhead.
+                Keep your glutes tight to prevent your lower back from arching.
+                Move the bar in a straight line while keeping your elbows slightly forward.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/StrictPress1.jpeg">
+              <img src="images/StrictPress2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/StrictPress3.jpeg">
+                <video src="images/StrictPressVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Push Press -->
+        <div class="exercise" id="PushPress">
+          <h3>Push Press</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The push press develops explosive shoulder power by using leg drive to assist the movement.
+                Dip slightly at the knees, then push upward forcefully to begin the press.
+                Transfer the momentum from your legs into the bar with a smooth motion.
+                Lock out fully at the top and control the descent to maximize strength gains.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/PushPress1.jpeg">
+              <img src="images/PushPress2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/PushPress3.jpeg">
+                <video src="images/PushPressVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section id="Legs">
+        <h2>Legs</h2>
+
+        <!-- Squat -->
+        <div class="exercise" id="Squat">
+          <h3>Squat</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The squat is a foundational lift that targets the quads, glutes, hamstrings, and core.
+                Keep your chest high, sit back into your hips, and maintain a stable stance.
+                Drive upward by pushing through your heels and keeping your knees in line with your toes.
+                Maintain tightness throughout your torso to support your lower back.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/Squat1.jpeg">
+              <img src="images/Squat2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/Squat3.jpeg">
+                <video src="images/SquatVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Split Squat -->
+        <div class="exercise" id="SplitSquat">
+          <h3>Split Squat</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The split squat improves unilateral leg strength, stability, and balance.
+                Stand tall and lower your back knee toward the ground while keeping your torso upright.
+                Drive upward through your front heel to engage the glute and quad.
+                Move slowly to maintain control and prevent wobbling during the descent.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/SplitSquat1.jpeg">
+              <img src="images/SplitSquat2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/SplitSquat3.jpeg">
+                <video src="images/SplitSquatVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Goblet Squat -->
+        <div class="exercise" id="GobletSquat">
+          <h3>Goblet Squat</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The goblet squat helps reinforce proper squat mechanics while improving core stability.
+                Hold the weight close to your chest and keep your elbows pointed downward.
+                Sit deep into the squat without rounding your lower back.
+                Use this movement to practice bracing and maintaining upright posture.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/GobletSquat1.jpeg">
+              <img src="images/GobletSquat2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/GobletSquat3.jpeg">
+                <video src="images/GobletSquatVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Leg Extension -->
+        <div class="exercise" id="LegExtension">
+          <h3>Leg Extension</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The leg extension isolates the quadriceps and helps strengthen the muscles around the knee.
+                Adjust the machine so the pad rests comfortably above your ankles.
+                Extend your legs smoothly without locking out your knees at the top.
+                Lower the weight under control to maintain tension on the quads.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/LegExtension1.jpeg">
+              <img src="images/LegExtension2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/LegExtension1.jpeg">
+                <video src="images/LegExtension.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Leg Curl -->
+        <div class="exercise" id="LegCurl">
+          <h3>Leg Curl</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                Leg curls effectively target the hamstrings while reducing strain on the lower back.
+                Keep your hips pressed into the pad and curl the weight in a smooth motion.
+                Pause briefly at the top of the rep to fully contract the hamstrings.
+                Lower slowly to maximize muscle activation throughout the movement.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/LegCurl1.jpeg">
+              <img src="images/LegCurl2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/LegCurl3.jpeg">
+                <video src="images/LegCurlVideo.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Leg Press -->
+        <div class="exercise" id="LegPress">
+          <h3>Leg Press</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                The leg press builds strength in the quads and glutes with less balance demand than squats.
+                Lower the sled with control, keeping your hips pressed into the seat.
+                Avoid locking out your knees to protect your joints.
+                Push through your whole foot—not just your toes or heels—to keep the movement balanced.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/LegPress1.jpeg">
+              <img src="images/LegPress2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/LegPress1.jpeg">
+                <video src="images/LegPress.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section id="Core">
+        <h2>Core</h2>
+
+        <!-- V Ups -->
+        <div class="exercise" id="VUps">
+          <h3>V-Ups</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                V-Ups target the entire abdominal region, especially the lower abs and hip flexors.
+                Keep your legs straight and lift them while reaching your hands toward your toes.
+                Move in a controlled motion rather than swinging yourself upward.
+                Exhale as you rise to increase core engagement throughout the movement.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/VUp1.jpeg">
+              <img src="images/VUp2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/VUp1.jpeg">
+                <video src="images/VUp.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Oblique V Ups -->
+        <div class="exercise" id="ObliqueVUps">
+          <h3>Oblique V-Ups</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                Oblique V-Ups focus on the side abdominal muscles and improve rotational stability.
+                Keep your body slightly twisted and bring your elbow toward your raised leg.
+                Avoid pulling on your neck; lift with your core instead.
+                Use slow, controlled reps to feel the oblique contraction at the top of each rep.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/ObliqueVUp1.jpeg">
+              <img src="images/ObliqueVUp2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/ObliqueVUp1.jpeg">
+                <video src="images/ObliqueVUp.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sit Ups -->
+        <div class="exercise" id="SitUps">
+          <h3>Sit-Ups</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                Sit-ups strengthen the upper abs and help build core endurance.
+                Keep your feet grounded and avoid pulling your head forward with your hands.
+                Exhale as you lift your torso and inhale as you lower slowly.
+                Focus on curling your spine to fully engage the abdominal muscles.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/SitUp1.jpeg">
+              <img src="images/SitUp2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/SitUps1.jpeg">
+                <video src="images/SitUp.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leg Raises -->
+        <div class="exercise" id="LegRaises">
+          <h3>Leg Raises</h3>
+          <div class="exercise-row">
+
+            <div class="exercise-text">
+              <p>
+                Leg raises target the lower abs and help strengthen the hip flexors.
+                Keep your legs straight and lift them without arching your lower back.
+                Use a slow tempo to avoid swinging and maintain constant tension.
+                Press your lower back into the floor or pad for better core activation.
+              </p>
+              <a class="back-to-top" href="#top">↑ Back to top</a>
+            </div>
+
+            <div class="exercise-media">
+              <img src="images/Leglift1.jpeg">
+              <img src="images/Leglift2.jpeg">
+              <div class="hover-wrap">
+                <img src="images/Leglift1.jpeg">
+                <video src="images/Leglift.mp4" muted loop autoplay playsinline></video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
     </section>
   </main>
-
   <footer>
     <p>About Us: We are 3 college students looking to help out other college age athletes meet their physical and mental goals.</p>
   </footer>
-
 </div>
-
 </body>
 </html>

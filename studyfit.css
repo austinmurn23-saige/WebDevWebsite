@@ -1,25 +1,10 @@
-dl {
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-}
-dt {
-    font-weight: bold;
-    margin-top: 25px;
-    font-size: 1.2em;
-    color: #4f7a63;
-}
-dd {
-    margin-left: 20px;
-    margin-top: 10px;
-    text-align: justify;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', Arial, sans-serif;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -27,6 +12,7 @@ body {
   min-height: 100vh;
   color: #213026;
 }
+
 .page-frame {
   background: #ffffff;
   width: 100%;
@@ -36,12 +22,14 @@ body {
   flex-direction: column;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
 }
+
 .site-header {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .header-collage {
   width: 100%;
   display: grid;
@@ -49,6 +37,7 @@ body {
   height: 180px;
   overflow: hidden;
 }
+
 .header-collage img {
   width: 100%;
   height: 100%;
@@ -56,10 +45,12 @@ body {
   filter: brightness(0.9);
   transition: 0.3s;
 }
+
 .header-collage img:hover {
   filter: brightness(1.07);
   transform: scale(1.03);
 }
+
 .title-banner {
   display: flex;
   align-items: center;
@@ -67,16 +58,19 @@ body {
   margin-top: 1.2rem;
   gap: 0.75rem;
 }
+
 .title-banner h1 {
   font-size: 2.2rem;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   color: #2e4a3a;
 }
+
 .logo {
   width: 55px;
   height: auto;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -84,6 +78,7 @@ nav ul {
   gap: 1.5rem;
   margin: 1.3rem 0 2rem;
 }
+
 nav a {
   text-decoration: none;
   padding: 0.6rem 1.3rem;
@@ -93,17 +88,20 @@ nav a {
   font-weight: 600;
   transition: 0.25s;
 }
+
 nav a:hover,
 nav a.active {
   background: #7fad94;
   color: #ffffff;
 }
+
 main {
   flex: 1;
   padding: 3rem 2rem;
   display: flex;
   justify-content: center;
 }
+
 .summary {
   max-width: 850px;
   text-align: center;
@@ -111,12 +109,33 @@ main {
   color: #2b3b32;
   font-family: 'Poppins', sans-serif;
 }
-.summary h2 {
+
+.summary h1, .summary h2 {
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 600;
   color: #4f7a63;
 }
+
+dl {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 1.2em;
+  color: #4f7a63;
+}
+
+dd {
+  margin-left: 20px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
 footer {
   background: #ffffff;
   border-top: 1px solid #d3ded8;
@@ -141,71 +160,114 @@ table.workout-table {
   border-collapse: collapse;
   margin: 2rem 0;
 }
+
 table.workout-table th,
 table.workout-table td {
   border: 1px solid #c6d6cc;
   padding: 0.7rem;
   text-align: center;
 }
+
 table.workout-table th {
   background: #d7e8df;
   color: #213026;
   font-weight: 600;
 }
-.right-group {
+
+.workout-section, .exercise-row {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.right-group span {
-  background: #f1f7f3;
-  border: 1px solid #c6d6cc;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
-.workout-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3rem 0;
   gap: 2rem;
+  margin: 3rem 0;
+  align-items: center;
 }
-.workout-text {
-  width: 50%;
+
+.exercise-row {
+  flex-wrap: wrap;
+}
+
+.exercise {
+  border: 1px solid #c6d6cc;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.exercise-text {
+  flex: 1;
   text-align: left;
-  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #2b3b32;
+  line-height: 1.6;
+  order: 1;
 }
-.workout-text h3 {
-  color: #4f7a63;
-  margin-bottom: 0.5rem;
-}
-.workout-images {
-  width: 50%;
+
+.exercise-media {
+  flex: 2;
   display: flex;
-  gap: 0;
+  gap: 10px;
+  align-items: center;
+  order: 2;
 }
-.workout-images img {
+
+.exercise-media img {
   width: 33.33%;
   height: 150px;
   object-fit: cover;
 }
 
-.workout-images {
-  width: 100px;
+.hover-wrap {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hover-wrap img,
+.hover-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-wrap video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-wrap:hover video {
+  opacity: 1;
+}
+
+.hover-wrap:hover img {
+  opacity: 0;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #4f7a63;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
 }
 
 
-
 @media (max-width: 800px) {
-  .workout-section {
+  .exercise-row, .workout-section {
     flex-direction: column;
     text-align: center;
   }
-  .workout-text, .workout-images {
+
+  .exercise-text, .exercise-media {
     width: 100%;
   }
-  .workout-images img {
+
+  .exercise-media img {
     height: 120px;
   }
 }
