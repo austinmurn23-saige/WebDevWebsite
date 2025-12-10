@@ -17,6 +17,37 @@
       height: auto;
 
     }
+    .hover-wrap {
+  position: relative;
+  display: inline-block;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hover-wrap img,
+.hover-wrapped video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hover-wrap video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.hover-wrap:hover video {
+  opacity: 1;
+}
+
+.hover-wrap:hover img {
+  opacity: 0;
+}
   </style>
 </head>
 <body>
@@ -144,7 +175,7 @@
     <img src="images/bench1.jpeg" alt="Bench Press 2">
     <div class="hover-wrap">
        <img src="images/bench2.jpeg" alt="Incline Bench Press Video Cover">
-      <video src="images/Bench.mp4" muted loop></video>
+      <video src="images/Bench.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -154,7 +185,7 @@
     <img src="images/inclinebench1.jpeg" alt="Incline Bench Press 2">
     <div class="hover-wrap">
       <img src="images/inclinebench2.jpeg" alt="Incline Bench Press Video Cover">
-      <video src="images/inclinebench.Mp4" muted loop></video>
+      <video src="images/inclinebench.Mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -164,7 +195,7 @@
     <img src="images/DumbellBench1.jpeg" alt="Dumbell Bench 2">
     <div class="hover-wrap">
       <img src="images/DumbellBench1.jpeg" alt="Dumbell Bench Video Cover">
-      <video src="images/DumbbellBench.mp4" muted loop></video>
+      <video src="images/DumbbellBench.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -174,7 +205,7 @@
     <img src="images/cablechestlfy2.jpeg" alt="Cable Fly 2">
     <div class="hover-wrap">
       <img src="images/CablechestFly1.jpeg" alt="Cable Fly Video Cover">
-      <video src="images/CableFly.mp4" muted loop></video>
+      <video src="images/CableFly.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 </section>
@@ -189,7 +220,7 @@
     <img src="images/BentOverRow2.jpeg" alt="Bent over Row 2">
     <div class="hover-wrap">
       <img src="images/BentOverRow3.jpeg" alt="Bent over Row Video Cover">
-      <video src="images/BentOver.mp4" muted loop></video>
+      <video src="images/BentOver.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -199,7 +230,7 @@
     <img src="images/PullUp2.jpeg" alt="Pull Ups 2">
     <div class="hover-wrap">
       <img src="images/PullUp1.jpeg" alt="Pull Ups Video Cover">
-      <video src="images/PullUp.mp4" muted loop></video>
+      <video src="images/PullUp.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -209,7 +240,7 @@
     <img src="images/IsoLateral2.jpeg" alt="Iso Lateral 2">
     <div class="hover-wrap">
       <img src="images/IsoLateral3.jpeg" alt="Iso Lateral Video Cover">
-      <video src="images/IsoLateral.mp4" muted loop></video>
+      <video src="images/IsoLateral.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -219,7 +250,7 @@
     <img src="images/Lateralpull2.jpeg" alt="Lat Pulldown 2">
     <div class="hover-wrap">
       <img src="images/Lateralpull1.jpeg" alt="Lat Pulldown Video Cover">
-      <video src="images/Latpulldown.mp4" muted loop></video>
+      <video src="images/Latpulldown.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -229,7 +260,7 @@
     <img src="images/SeatedRow2.jpeg" alt="Seated Row 2">
     <div class="hover-wrap">
       <img src="images/SeatedRow1.jpeg" alt="Seated Row Video Cover">
-      <video src="images/SeatedRow.mp4" muted loop></video>
+      <video src="images/SeatedRow.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 </section>
@@ -244,7 +275,7 @@
     <img src="images/BicepCurl2.jpeg" alt="Bicep Curl 2">
     <div class="hover-wrap">
       <img src="images/BicepCurl3.jpeg" alt="Bicep Curl Video Cover">
-      <video src="images/BicepCurl.mp4" muted loop></video>
+      <video src="images/BicepCurl.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -254,7 +285,7 @@
     <img src="images/HammerCurl2.jpeg" alt="Hammer Curl 2">
     <div class="hover-wrap">
       <img src="images/HammerCurl3.jpeg" alt="Hammer Curl Video Cover">
-      <video src="images/HammerCurlVideo.mp4" muted loop></video>
+      <video src="images/HammerCurlVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -264,7 +295,7 @@
     <img src="images/PreacherCurl2.jpeg" alt="Preacher Curl 2">
     <div class="hover-wrap">
       <img src="images/PreacherCurl3.jpeg" alt="Preacher Curl Video Cover">
-      <video src="images/PreacherCurlVideo.mp4" muted loop></video>
+      <video src="images/PreacherCurlVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -274,7 +305,7 @@
     <img src="images/BarbellCurl2.jpeg" alt="Barbell Curl 2">
     <div class="hover-wrap">
       <img src="images/BarbellCurl3.jpeg" alt="Barbell Curl Video Cover">
-      <video src="images/BarbellCurl.mp4" muted loop></video>
+      <video src="images/BarbellCurl.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 </section>
@@ -289,7 +320,7 @@
     <img src="images/SkullCrusher2.jpeg" alt="Skull Crusher 2">
     <div class="hover-wrap">
       <img src="images/SkullCrusher3.jpeg" alt="Skull Crusher Video Cover">
-      <video src="images/SkullCrusherVideo.mp4" muted loop></video>
+      <video src="images/SkullCrusherVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -299,7 +330,7 @@
     <img src="images/CableOverheadExtension2.jpeg" alt="Cable Overhead Extension 2">
     <div class="hover-wrap">
       <img src="images/CableOverheadExtension3.jpeg" alt="Cable Overhead Extension Video Cover">
-      <video src="images/CableOverheadExtensionVideo.mp4" muted loop></video>
+      <video src="images/CableOverheadExtensionVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -309,7 +340,7 @@
     <img src="images/CablePushDown2.jpeg" alt="Cable Push Down 2">
     <div class="hover-wrap">
       <img src="images/CablePushDown3.jpeg" alt="Cable Push Down Video Cover">
-      <video src="images/CablePushDownVideo.mp4" muted loop></video>
+      <video src="images/CablePushDownVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -319,7 +350,7 @@
     <img src="images/PushDownMachine2.jpeg" alt="Push Down Machine 2">
     <div class="hover-wrap">
       <img src="images/PushDownMachine3.jpeg" alt="Push Down Machine Video Cover">
-      <video src="images/PushDownMachineVideo.mp4" muted loop></video>
+      <video src="images/PushDownMachineVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 </section>
@@ -334,7 +365,7 @@
     <img src="images/EgyptianRaise2.jpeg" alt="Egyptian Raise 2">
     <div class="hover-wrap">
       <img src="images/EgyptianRaise3.jpeg" alt="Egyptian Raise Video Cover">
-      <video src="images/EgyptianRaiseVideo.mp4" muted loop></video>
+      <video src="images/EgyptianRaiseVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -344,7 +375,7 @@
     <img src="images/RearDeltFly2.jpeg" alt="Rear Delt Fly 2">
     <div class="hover-wrap">
       <img src="images/RearDeltFly3.jpeg" alt="Rear Delt Fly Video Cover">
-      <video src="images/RearDeltFlyVideo.mp4" muted loop></video>
+      <video src="images/RearDeltFlyVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -354,7 +385,7 @@
     <img src="images/ArnoldPress2.jpeg" alt="Arnold Press 2">
     <div class="hover-wrap">
       <img src="images/ArnoldPress3.jpeg" alt="Arnold Press Video Cover">
-      <video src="images/ArnoldPressVideo.mp4" muted loop></video>
+      <video src="images/ArnoldPressVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -364,7 +395,7 @@
     <img src="images/StrictPress2.jpeg" alt="Strict Press 2">
     <div class="hover-wrap">
       <img src="images/StrictPress3.jpeg" alt="Strict Press Video Cover">
-      <video src="images/StrictPressVideo.mp4" muted loop></video>
+      <video src="images/StrictPressVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -374,7 +405,7 @@
     <img src="images/PushPress2.jpeg" alt="Push Press 2">
     <div class="hover-wrap">
       <img src="images/PushPress3.jpeg" alt="Push Press Video Cover">
-      <video src="images/PushPressVideo.mp4" muted loop></video>
+      <video src="images/PushPressVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 </section>
@@ -389,7 +420,7 @@
     <img src="images/Squat2.jpeg" alt="Squat 2">
     <div class="hover-wrap">
       <img src="images/Squat3.jpeg" alt="Squat Video Cover">
-      <video src="images/SquatVideo.mp4" muted loop></video>
+      <video src="images/SquatVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -399,7 +430,7 @@
     <img src="images/SplitSquat2.jpeg" alt="Split Squat 2">
     <div class="hover-wrap">
       <img src="images/SplitSquat3.jpeg" alt="Split Squat Video Cover">
-      <video src="images/SplitSquatVideo.mp4" muted loop></video>
+      <video src="images/SplitSquatVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -409,7 +440,7 @@
     <img src="images/GobletSquat2.jpeg" alt="Goblet Squat 2">
     <div class="hover-wrap">
       <img src="images/GobletSquat3.jpeg" alt="Goblet Squat Video Cover">
-      <video src="images/GobletSquatVideo.mp4" muted loop></video>
+      <video src="images/GobletSquatVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -419,7 +450,7 @@
     <img src="images/LegExtension2.jpeg" alt="Leg Extension 2">
     <div class="hover-wrap">
       <img src="images/LegExtension1.jpeg" alt="Leg Extension Video Cover">
-      <video src="images/LegExtension.mp4" muted loop></video>
+      <video src="images/LegExtension.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -429,7 +460,7 @@
     <img src="images/LegCurl2.jpeg" alt="Leg Curl 2">
     <div class="hover-wrap">
       <img src="images/LegCurl3.jpeg" alt="Leg Curl Video Cover">
-      <video src="images/LegCurlVideo.mp4" muted loop></video>
+      <video src="images/LegCurlVideo.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -439,7 +470,7 @@
     <img src="images/LegPress2.jpeg" alt="Leg Press 2">
     <div class="hover-wrap">
       <img src="images/LegPress1.jpeg" alt="Leg Press Video Cover">
-      <video src="images/LegPress.mp4" muted loop></video>
+      <video src="images/LegPress.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 </section>
@@ -454,7 +485,7 @@
     <img src="images/VUp2.jpeg" alt="V-Ups 2">
     <div class="hover-wrap">
       <img src="images/VUp1.jpeg" alt="V-Ups Video Cover">
-      <video src="images/VUp.mp4" muted loop></video>
+      <video src="images/VUp.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -464,7 +495,7 @@
     <img src="images/ObliqueVUp2.jpeg" alt="Oblique V-Ups 2">
     <div class="hover-wrap">
       <img src="images/ObliqueVUp1.jpeg" alt="Oblique V-Ups Video Cover">
-      <video src="images/ObliqueVUp.mp4" muted loop></video>
+      <video src="images/ObliqueVUp.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -474,7 +505,7 @@
     <img src="images/SitUp2.jpeg" alt="Sit-Ups 2">
     <div class="hover-wrap">
       <img src="images/SitUps1.jpeg" alt="Sit-Ups Video Cover">
-      <video src="images/SitUp.mp4" muted loop></video>
+      <video src="images/SitUp.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
 
@@ -484,7 +515,7 @@
     <img src="images/Leglift2.jpeg" alt="Leg Raises 2">
     <div class="hover-wrap">
       <img src="images/leglift1.jpeg" alt="Leg Raises Video Cover
-      <video src="images/"Leglift.mp4" muted loop></video>
+      <video src="images/"Leglift.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
     </section>
