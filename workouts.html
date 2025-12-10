@@ -17,19 +17,32 @@
       height: auto;
 
     }
-    .hover-wrap {
-  position: relative;
-  display: inline-block;
+  
+.exercise-row {
+  display: flex;
+  gap: 10px;
+  align-items: stretch; /* makes all items the same height */
+}
+
+.exercise-row > img,
+.exercise-row > .hover-wrap {
+  flex: 1 1 30%;
   height: auto;
+  object-fit: cover; /* makes image/video fill the container nicely */
+}
+
+.hover-wrap {
+  position: relative;
   overflow: hidden;
   cursor: pointer;
 }
 
 .hover-wrap img,
-.hover-wrapped video {
-  display: block;
+.hover-wrap video {
   width: 100%;
-  height: auto;
+  height: 100%; /* fill the entire container */
+  object-fit: cover; /* crop/fit nicely */
+  display: block;
 }
 
 .hover-wrap video {
@@ -38,7 +51,6 @@
   left: 0;
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none;
 }
 
 .hover-wrap:hover video {
@@ -48,6 +60,11 @@
 .hover-wrap:hover img {
   opacity: 0;
 }
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -170,24 +187,28 @@
   <h2>Chest</h2>
 
   <div class="exercise" id="BenchPress">
-    <h3>Bench Press</h3>
+  <h3>Bench Press</h3>
+  <div class="exercise-row">
     <img src="images/bench2.jpeg" alt="Bench Press 1">
     <img src="images/bench1.jpeg" alt="Bench Press 2">
     <div class="hover-wrap">
-       <img src="images/bench2.jpeg" alt="Incline Bench Press Video Cover">
+      <img src="images/bench2.jpeg" alt="Incline Bench Press Video Cover">
       <video src="images/Bench.mp4" muted loop autoplay playsinline></video>
     </div>
   </div>
+</div>
 
   <div class="exercise" id="InclineBenchPress">
     <h3>Incline Bench Press</h3>
+     <div class="exercise-row">
     <img src="images/inclinebench2.jpeg" alt="Incline Bench Press 1">
     <img src="images/inclinebench1.jpeg" alt="Incline Bench Press 2">
     <div class="hover-wrap">
       <img src="images/inclinebench2.jpeg" alt="Incline Bench Press Video Cover">
       <video src="images/inclinebench.Mp4" muted loop autoplay playsinline></video>
     </div>
-  </div>
+     </div>
+    </div>
 
   <div class="exercise" id="DumbellBench">
     <h3>Dumbell Bench</h3>
