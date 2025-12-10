@@ -191,6 +191,10 @@ table.workout-table th {
   object-fit: cover;
 }
 
+.workout-images {
+  width: 100px;
+}
+
 
 
 @media (max-width: 800px) {
