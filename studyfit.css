@@ -247,7 +247,10 @@ table.workout-table th {
 .hover-wrap:hover img {
   opacity: 0;
 }
-
+.hover-wrap video {
+  transform: scale(1.2);   
+  transform-origin: center;
+}
 .back-to-top {
   display: inline-block;
   margin-top: 0.5rem;
