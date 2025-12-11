@@ -278,3 +278,110 @@ table.workout-table th {
     height: 120px;
   }
 }
+
+
+@media (max-width: 800px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  .summary {
+    padding: 0 1rem;
+  }
+
+  .exercise-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    gap: 1rem !important;
+  }
+
+  .exercise-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 1.25rem !important;
+    text-align: left !important;
+    display: block !important;
+  }
+
+  .exercise-media {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.75rem !important;
+  }
+
+  .exercise-media img,
+  .exercise-media .hover-wrap {
+    width: 90% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .hover-wrap video {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .workout-table thead {
+    display: none;
+  }
+
+  .workout-table,
+  .workout-table tbody,
+  .workout-table tr,
+  .workout-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .workout-table tr {
+    margin-bottom: 1.4rem;
+    border: 1px solid #d7e8df;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #f9fcfa;
+  }
+
+  .workout-table td {
+    padding: 0.4rem 0;
+    text-align: left;
+    border: none;
+    white-space: normal;
+  }
+
+  .workout-table td:nth-child(1)::before { content: "Muscle Group: "; font-weight: 600; }
+  .workout-table td:nth-child(2)::before { content: "Exercise 1: "; font-weight: 600; }
+  .workout-table td:nth-child(3)::before { content: "Exercise 2: "; font-weight: 600; }
+  .workout-table td:nth-child(4)::before { content: "Exercise 3: "; font-weight: 600; }
+  .workout-table td:nth-child(5)::before { content: "Exercise 4: "; font-weight: 600; }
+  .workout-table td:nth-child(6)::before { content: "Exercise 5: "; font-weight: 600; }
+
+  .workout-table td::before {
+    color: #4f7a63;
+    margin-right: 0.3rem;
+  }
+
+  .summary img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .summary > video {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 1rem auto;
+  }
+}
